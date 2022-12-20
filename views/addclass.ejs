@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cluxuniversity</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row bg-primary text-white text-center py-3">
+            <h2>Add new class</h2>
+        </div>
+    </div>
+    
+
+    <div  class="container mt-5">
+        <div class="container padding-top">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-11 col-md-8 col-lg-6 mx-auto bg-light p-4 rounded py-5">
+                    <h2 class="text-center mb-3">Enter class details</h2>
+                    <form  id="class_form" method="POST">
+                        <div id="message">
+
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Enter a description" id="description" style="height: 100px" name="description"></textarea>
+                            <label for="floatingTextarea2">Description</label>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <label for="start">Start date</label>
+                                <input class="form-control" type="datetime-local" name="start" id="start">
+                            </div>
+                            <div class="col">
+                                <label for="end">End date</label>
+                                <input class="form-control" type="datetime-local" name="end" id="end">
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="max_participant">Max participant</label>
+                            <input class="form-control" type="number" name="max_participants" id="max_participants">
+                        </div>
+                        <div class="form-check mb-3">
+                            <label for="record_class" class="form-check-label">Record class</label>
+                            <input class="form-check-input" type="checkbox" name="record_class" id="record_class">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block w-100 rounded px-4 py-2 mt-3" id="add_btn"><i class="fa fa-plus"></i> Create</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+   <script src="js/addclass.js"></script>
+</body>
+</html>

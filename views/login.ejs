@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cluxuniversity</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container padding-top">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-11 col-md-8 col-lg-6 mx-auto bg-light p-4 rounded py-5">
+                <h2 class="text-center mb-3">Enter your details</h2>
+                <form  id="login_form" method="POST">
+
+                    <div id="message"></div>
+
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Username</label>
+                      <input type="text" class="form-control" placeholder="Enter your username" id="username" aria-describedby="emailHelp" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block w-100 rounded px-4 py-2 mt-2" id="login_btn">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+   <script src="js/jquery.min.js"></script>
+   <script src="js/login.js"></script>
+</body>
+</html>
